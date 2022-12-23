@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container">
+  <form method="post">
+    {{ mmm.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Formmm" >
+  </form>
+</div>
+</body>
+</html>

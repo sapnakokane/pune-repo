@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/demo3.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+       <h1> <a class="navbar-brand" href="/">Sappy Exams Portal</a></h1>
+        </div>
+        <ul class="navbar navbar-nav navbar">
+            <li> <a href="/python">Python Exams</a>&nbsp&nbsp
+                <a href="/java">Java Exams</a>&nbsp&nbsp
+                <a href="/apti">Aptitude Exams</a>
+            </li>
+            </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup">Signup</a>&nbsp&nbsp
+            <a href="/accounts/login/">Login</a>&nbsp&nbsp
+            <a href="/accounts/logout/">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+{% block body_block %}
+{% endblock %}
+</body>
+</html>

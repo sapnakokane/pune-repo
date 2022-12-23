@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP</title>
+    <link rel="stylesheet" href="{% static 'user/css/bootstrap.css' %}"
+</head>
+<body>
+  <div class="container mt-5">
+      <h1>Hello.....</h1>
+      <h2 class="text-center alert alert-info">JSP</h2>
+        {% block content %}  {% endblock content %}
+  </div>
+</body>
+</html>

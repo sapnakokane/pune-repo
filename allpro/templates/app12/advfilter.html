@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>advtemp</title>
+</head>
+<body>
+{% load cust_filters %}
+{% for i in modl %}
+<ul>
+    <h5>first five in upper case</h5>
+<li>{{i.name|f5u}}</li>
+     <h5>last five in lower case</h5>
+<li>{{i.name|l5l}}</li>
+    <h5>all in lower case</h5>
+<li>{{i.name|lower}}</li>
+    <h5>all in upper case</h5>
+<li>{{i.name|upper}}</li>
+    <h5>all in title case</h5>
+<li>{{i.name|title}}</li>
+    <h5>age:::</h5>
+<li>{{i.age}}</li>
+    <h5>used date:"d-m-Y"</h5>
+<li>{{i.date|date:"d-m-Y"}}</li>
+    <h5>used date:timesince</h5>
+<li>{{i.date|timesince}}</li>
+    <h5>Your salary is</h5>
+<li>{{i.sal}}</li>
+    <h5>Your image is: </h5>
+<li>{{i.img}}</li>
+    </ul>
+
+
+{% endfor %}
+</body>
+</html>

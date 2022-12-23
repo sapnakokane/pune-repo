@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    <title>server time</title>
+</head>
+<body>
+<h1>the current server time is</h1>
+<h2>{{dt}}</h2>
+<h3>my morning picture is....</h3>
+<img src="{% static 'images/morn.jpg' %}" alt="">
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+background: url("/static/images/morn.jpg");
+background-repeat: no-repeat;
+background-size: 1500px 1000px;
+align: center;
+}
+h1{
+color : blue;
+text-align : center;
+}
+h2{
+color : red;
+text-align : center;
+}
+h3{
+color : orange;
+text-align : center;
+}
+img{
+border: 20px skyblue solid;
+}
+a{
+color: purple;
+}

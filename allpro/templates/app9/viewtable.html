@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container" align="center">
+  <div class="jumbotron">
+
+    <h1> Your Data is Saved Successfully </h1>
+
+    {% if malist %}
+  <table>
+    <thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Email</th>
+    </thead>
+    {% for i in malist %}
+    <tr>
+      <td>{{i.name}}</td>
+      <td>{{i.age}}</td>
+      <td>{{i.email}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+    {% else %}
+    <p>no data found</p>
+    {% endif %}
+
+    </div>
+  </div>
+
+</body>
+</html>

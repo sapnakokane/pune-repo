@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'app1/base.html' %}
+{% block body_block %}
+<h1>Delete {{emp.name}}???</h1><hr>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary btn-danger" value="Delete Record">
+    <a href="/{{emp.id}}" class="btn btn-primary btn-success">Cancel</a>
+</form>
+{% endblock %}

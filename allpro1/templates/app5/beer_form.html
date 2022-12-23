@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'app5/base.html' %}
+{% block body_block %}
+<h1>Add New Beer Here</h1><hr>
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary btn-lg" value="Insert/Update Beer">
+</form>
+{% endblock %}

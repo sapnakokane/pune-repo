@@ -1,0 +1,20 @@
+input[type=text]{
+width: 20%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid red:
+border-radius:4px;
+border-bottom: 2px solid blue;
+background-color: #3CBC8D;
+color : maroon;
+background-color: lightblue;
+}
+input[type=submit]{
+background-color: #04AA6D;
+border: none;
+color: yellow;
+padding: 16px 32px;
+cursor: pointer;
+margin: 4px 2px;
+}

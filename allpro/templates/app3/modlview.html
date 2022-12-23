@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'css/demo3.css' %}"
+    <title>data list</title>
+</head>
+<body>
+<h1>The employees list is: </h1>
+
+{% if mylist %}
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Email</th>
+    <th>Date</th>
+    </thead>
+    {% for i in mylist %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>no records found</p>
+{% endif %}
+</body>
+</html>

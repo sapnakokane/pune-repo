@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'app3/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+    <div class="container" align="center">
+        <h1>Login to start exam</h1>
+      <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">Login</button>
+      </form>
+    </div>
+</div>
+{% endblock %}
